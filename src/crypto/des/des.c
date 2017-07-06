@@ -378,7 +378,7 @@ void DES_set_odd_parity(DES_cblock *key) {
   }
 }
 
-static void DES_encrypt1(uint32_t *data, const DES_key_schedule *ks, int enc) {
+void DES_encrypt1(uint32_t *data, const DES_key_schedule *ks, int enc) {
   uint32_t l, r, t, u;
 
   r = data[0];
@@ -442,7 +442,7 @@ static void DES_encrypt1(uint32_t *data, const DES_key_schedule *ks, int enc) {
   data[1] = r;
 }
 
-static void DES_encrypt2(uint32_t *data, const DES_key_schedule *ks, int enc) {
+void DES_encrypt2(uint32_t *data, const DES_key_schedule *ks, int enc) {
   uint32_t l, r, t, u;
 
   r = data[0];

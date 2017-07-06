@@ -169,6 +169,10 @@ OPENSSL_EXPORT void DES_encrypt3(uint32_t *data, const DES_key_schedule *ks1,
                                  const DES_key_schedule *ks2,
                                  const DES_key_schedule *ks3);
 
+OPENSSL_EXPORT void DES_encrypt1(uint32_t *data, const DES_key_schedule *ks, int enc);
+
+OPENSSL_EXPORT void DES_encrypt2(uint32_t *data, const DES_key_schedule *ks, int enc);
+
 
 #if defined(__cplusplus)
 }  /* extern C */
